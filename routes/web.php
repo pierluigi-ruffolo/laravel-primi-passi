@@ -3,13 +3,13 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-
-    return view('home', ["Benvenuto" => "Benvenuto da Luigi"]);
-});
+    $benvenuto = "Benvenuto da Luigi";
+    return view('home', compact('benvenuto'));
+})->name('home');
 
 Route::get('/about', function () {
     return view('about');
-});
+})->name('about');
 
 Route::get('/menu', function () {
     $pizze = [
@@ -47,5 +47,5 @@ Route::get('/menu', function () {
         ]
     ];
 
-    return view('menu', ["pizze" => $pizze]);
-});
+    return view('menu', compact("pizze"));
+})->name('menu');

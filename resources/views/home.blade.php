@@ -13,7 +13,7 @@
 
     <header class="bg-danger text-white py-5">
         <div class="container py-5 text-center">
-            <h1 class="display-3 fw-bold">{{$Benvenuto}}</h1>
+            <h1 class="display-3 fw-bold">{{$benvenuto}}</h1>
             <p class="lead mb-4">La migliore pizza della città, cotta nel forno a legna.</p>
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
                 <a href="{{url('/menu')}}" class="btn btn-warning btn-lg px-4 fw-bold">Scopri il Menu</a>
